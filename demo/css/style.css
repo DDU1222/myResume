@@ -1,0 +1,117 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+	overflow-x: hidden;
+	padding: 0px;
+  margin: 0px;
+}
+body {
+  background: #121a2a;
+  font-family: 'Lantinghei SC', 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+#particles {
+	position:fixed;
+	top:0;
+  left:0;
+	right:0;
+	bottom:0;
+  overflow: hidden;
+}
+.whole_view{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+.module{
+	width: 100%;
+  height: 100%;
+  overflow: hidden;
+	text-align: center;
+	font-size:20px;
+	background-color:rgba(0,0,0,0.5)
+}
+#intro {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+	margin:-250px 0px 0px -250px;
+  width:500px;
+	height:500px;
+  text-align: center;
+	border-radius:250px;
+  border:3px solid #000;
+}
+#circle{
+	position: absolute;
+  left: 50%;
+  top: 50%;
+	margin:-250px 0px 0px -250px;
+  width:500px;
+	height:500px;
+  text-align: center;
+	border-radius:250px;
+  border:3px solid #fff;
+	box-shadow: 0px 0px 3px #fff;
+	animation:circle 2s 1 ease-in-out;
+	-weblit-animation:circle 2s 1 linear;
+	-moz-animation:circle 2s 1 linear;
+}
+#intro .userphoto{
+	width:150px;
+	height:150px;
+	margin:70px auto;
+	border-radius:75px;
+	border:3px solid #fff;
+	overflow: hidden
+}
+.userphoto img{
+	width:150px;
+	height:auto;
+}
+#intro h1{
+	color:white;
+	position: absolute;
+  left: 40%;
+  top: 60%;
+}
+#intro h3{
+	color:white;
+	position: absolute;
+  left: 35%;
+  top: 75%;
+}
+@-webkit-keyframes circle {
+	0%{clip:rect(0px,500px,500px,200px);transform:rotate(0deg);}
+	100%{clip:rect(0px,500px,500px,0px);transform:rotate(-180deg);}
+}
+@-moz-keyframes circle {
+		0%{clip:rect(0px,500px,500px,500px);transform:rotate(0deg);}
+		100%{clip:rect(0px,500px,500px,0px);transform:rotate(-180deg);}
+}
+@keyframes circle {
+		0%{clip:rect(0px,500px,500px,500px);transform:rotate(0deg);}
+		100%{clip:rect(0px,500px,500px,0px);transform:rotate(-180deg);}
+}
+
+.info_module{
+	position:absolute;
+	width:460px;
+	height:530px;
+	margin:30px 0px;
+	left:50%;
+	margin-left:-230px;
+
+}
+.info_module div{
+	padding:8px;
+}
